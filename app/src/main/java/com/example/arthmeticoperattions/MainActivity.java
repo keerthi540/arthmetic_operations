@@ -1,4 +1,4 @@
-package com.example.basiccal;
+package com.example.arthmeticoperattions;
 
 import androidx.appcompat.app.AppCompatActivity;
 
