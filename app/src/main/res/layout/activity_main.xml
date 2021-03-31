@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:textAlignment="center"
+    android:background="#E3CBD3"
+    android:weightSum="1"
+    tools:ignore="RtlCompat">
+
+    <TextView
+        android:text="Enter_two_numbers"
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:textColorLink="?android:attr/editTextColor"
+        android:textSize="24sp"
+        android:layout_weight="0.07" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/editOp1"
+        android:textSize="18sp"
+        android:hint="Enter first Number"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:visibility="visible" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter second Number"
+        android:inputType="number"
+        android:id="@+id/editOp2"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:elevation="1dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="+"
+            android:layout_width="78dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnadd"
+            android:textSize="20dp"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:text="-"
+            android:layout_width="78dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnsub"
+            android:textSize="20dp"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:text="*"
+            android:layout_width="78dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnmul"
+            android:textSize="20dp"
+            android:layout_weight="0.03"/>
+
+        <Button
+            android:text="/"
+            android:layout_height="50dp"
+            android:id="@+id/btndiv"
+            android:layout_width="78dp"
+            android:textSize="20dp"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:text="C"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnclr"
+            android:textSize="20dp"
+            android:layout_weight="0.03" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/Result"
+        android:layout_width="match_parent"
+        android:id="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:textColorLink="?android:attr/editTextColor"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/Result"
+        android:textSize="18sp"
+        android:text="0.00"
+        android:gravity="center_horizontal" />
